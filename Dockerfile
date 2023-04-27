@@ -13,5 +13,8 @@ RUN python3 -m pip install npyscreen twisted
 RUN git clone https://gitlab.ucc.asn.au/UCC/virtualcoke.git /usr/src/virtualcoke
 
 WORKDIR /usr/src/OpenDispense2
+
+EXPOSE 11021
+
 CMD ["../virtualcoke/virtualcoke.py&"]
 CMD ["./dispsrv"]
